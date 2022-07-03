@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  
+}
+
+:root{
+  --base-color: 94;
+  --font-numbers: 'Roboto', 'sans-serif';
+  --color-bg: hsl(240, 5%, 7%);
+  --primary-color:hsl(var(--base-color), 100%, 63%);
+  --color-numbers: hsl(0, 0%, 100%);
+  --color-bgc:hsla(var(--base-color), 100%, 63%, 0.13);
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-numbers);
+
+  font-family: var(--font-numbers);
+  
+  display: grid;
+  min-height: 100vh;
+  /* colocar 100 significa que ele vai utilizar a pagina inteira para posicionar os elementos. se não utilizar isso o footer vai ficar em cima. */
+
+}
+
+
+main {
+
+  justify-self: center;
+  align-self: center;
+  
+
+}
+
+
+footer {
+  justify-self: end;
+  align-self: end;
+
+  padding: 0 4rem 3.2rem 0;
+}
+#timer {
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+  display: flex;
+
+  margin-bottom: 1.6rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.play svg path,
+.pause svg path,
+.sound-on svg path {
+  fill: var(--primary-color);
+
+}
+
+#controls {
+  background-color: var(--color-bgc);
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+  gap: 3.2rem;
+
+  border-radius: 9999px;
+
+  width: clamp(10rem, 10rem + 20vw, 22.8rem);
+  height: clamp(8rem, 4rem + 8vh, 10.8rem)
+}
+
+button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
