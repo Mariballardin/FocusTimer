@@ -6,9 +6,9 @@
 }
 
 :root{
-  --base-color: 94;
+  --base-color: 200;
   --font-numbers: 'Roboto', 'sans-serif';
-  --color-bg: hsl(240, 5%, 7%);
+  --color-bg:  hsl(201, 61%, 10%);
   --primary-color:hsl(var(--base-color), 100%, 63%);
   --color-numbers: hsl(0, 0%, 100%);
   --color-bgc:hsla(var(--base-color), 100%, 63%, 0.13);
